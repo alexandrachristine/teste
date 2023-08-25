@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(211, 194, 194);
+    background-image: url('https://catland.org.br/wp-content/uploads/2023/04/foto-1.png');
+
+    img {
+        border-radius: 50%;
+    }
+
+    text-align: center;
+
+
+}
+
+div,
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4 {
+    color: #fffafa;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+    font-style: inherit;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+h4 {
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+    background-color: black;
+}
+
+div {
+    font-size: larger;
+    display: incline-block;
+    font-weight: bold
+}
+
+
+form {
+    margin: auto;
+    width: 200px;
+    padding: 8px;
+    border: 6px solid #181515;
+    border-radius: 4px;
+    text-align: left
+}
+
+.d1 {
+    padding: 10px 5px 3px 30px;
+}
+
+.d1 label {
+    display: inline-block;
+    width: 150px;
+
+}
+
+.d1 input[type=text],
+.d1 input[type=email],
+.d1 textarea {
+    width: 150px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: rgb(167, 146, 146)
+}
+
+.d1 input[type=submit] {
+    background-color: rgb(161, 161, 180);
+    border: 6px solid rgb(255, 255, 255);
+    padding: 20px;
+    margin: 50px;
+}
