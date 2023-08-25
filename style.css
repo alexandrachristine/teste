@@ -2,9 +2,7 @@ body {
     background-color: rgb(211, 194, 194);
     background-image: url('https://catland.org.br/wp-content/uploads/2023/04/foto-1.png');
 
-    img {
-        border-radius: 50%;
-    }
+
 
     text-align: center;
 
