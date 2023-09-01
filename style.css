@@ -1,14 +1,6 @@
 body {
-    background-color: rgb(211, 194, 194);
-    background-image: url('https://catland.org.br/wp-content/uploads/2023/04/foto-1.png');
-
-    img {
-        border-radius: 50%;
-    }
-
+    background-color: rgba(255, 0, 140, 0.164);
     text-align: center;
-
-
 }
 
 div,
@@ -19,22 +11,19 @@ h1,
 h2,
 h3,
 h4 {
-    color: #fffafa;
-    font-family: 'Open Sans', sans-serif;
+    color: #020202;
+    font-family: 'Kanit', sans-serif;
 }
 
-h3 {
-    font-style: inherit;
+h1 {
     font-size: 20px;
-    text-align: center;
-    background-color: rgb(0, 0, 0);
+    color: black;
+    background-color: transparent;
 }
 
 h4 {
-    font-style: italic;
-    font-size: 22px;
-    text-align: center;
-    background-color: black;
+    font-size: 40px;
+    background-color: transparent;
 }
 
 div {
@@ -43,12 +32,11 @@ div {
     font-weight: bold
 }
 
-
 form {
     margin: auto;
-    width: 200px;
-    padding: 8px;
-    border: 6px solid #181515;
+    width: 400px;
+    padding: 50px;
+    border: 4px solid #dfc5c5;
     border-radius: 4px;
     text-align: left
 }
@@ -67,13 +55,66 @@ form {
 .d1 input[type=email],
 .d1 textarea {
     width: 150px;
-    border: 3px solid rgb(0, 0, 0);
-    background-color: rgb(167, 146, 146)
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(245, 245, 245)
 }
 
 .d1 input[type=submit] {
-    background-color: rgb(161, 161, 180);
-    border: 6px solid rgb(255, 255, 255);
-    padding: 20px;
-    margin: 50px;
+    background-color: rgb(236, 236, 236);
+    border: 6px solid rgb(194, 165, 165);
+    padding: 10px;
+    margin: 3px;
+    font-family: 'Kanit', sans-serif;
+    color: #070707;
+}
+
+.gatinho {
+    width: 250px;
+    padding: 30px;
+    height: auto;
+}
+
+.cinza {
+    width: 300px;
+    height: auto;
+    display: block;
+}
+
+.nave ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nave ul li {
+    display: inline;
+}
+
+.nave ul li a {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    border: 1px solid transparent;
+    color: rgb(233, 9, 54);
+}
+
+p {
+    text-decoration: 3px rgb(148, 230, 72) underline overline;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
 }
