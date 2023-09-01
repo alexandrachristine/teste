@@ -37,7 +37,7 @@ form {
     width: 400px;
     padding: 50px;
     border: 4px solid #dfc5c5;
-    border-radius: 4px;
+    border-radius: 20px;
     text-align: left
 }
 
@@ -52,21 +52,55 @@ form {
 }
 
 .d1 input[type=text],
-.d1 input[type=email],
-.d1 textarea {
+.d1 input[type=email] {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #ea00ff;
+    -moz-box-shadow: 2px 2px 3px #ff0f6b;
+    -webkit-box-shadow: 2px 2px 3px #ff0443;
     width: 150px;
     border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(245, 245, 245)
+
 }
 
-.d1 input[type=submit] {
-    background-color: rgb(236, 236, 236);
-    border: 6px solid rgb(194, 165, 165);
-    padding: 10px;
-    margin: 3px;
-    font-family: 'Kanit', sans-serif;
-    color: #070707;
+.d1 textarea {
+    border: 1px solid #000000;
+    background: #ffffff;
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #ffffff;
+    -moz-box-shadow: 2px 2px 3px #e608ae;
+    -webkit-box-shadow: 2px 2px 3px #ff0443;
 }
+
+
+.d1 input[type=submit] {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid #ff00dd;
+    border-radius: 9px;
+    color: #ff0055;
+    align-self: center;
+    font-size: 20px;
+    font-weight: 200px;
+    margin: 5px;
+    padding: 1.3em 3.10em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    -moz-border-radius: 4px;
+
+}
+
+input:hover,
+input:focus {
+    color: rgb(0, 0, 0);
+    outline: 0;
+}
+
 
 .gatinho {
     width: 250px;
@@ -99,22 +133,26 @@ form {
 }
 
 p {
-    text-decoration: 3px rgb(148, 230, 72) underline overline;
-    animation-duration: 3s;
+
+    text-decoration: 3px rgb(255, 0, 191) underline overline;
+    animation-duration: 10s;
     animation-name: slidein;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: unset;
+  
+
 }
 
 @keyframes slidein {
     from {
         margin-left: 100%;
-        width: 300%;
+        width: 60%;
+        padding: auto;
 
     }
 
     to {
-        margin-left: 0%;
+        align-items: center;
         width: 100%;
     }
 }
