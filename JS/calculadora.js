@@ -21,7 +21,11 @@ function calcular() {
     else {
         document.getElementById('resultado').innerHTML = " "
     }
-
+    sssssss
 
 }
+let x = 0;
+function insert2(num, num2) {
+    x++;
 
+}
