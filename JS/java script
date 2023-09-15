@@ -1,0 +1,142 @@
+// Operadores
+// atribuição =
+// igual == ou ===
+// desigualdade !=
+
+// ####################################
+// Operadores Aritméticos
+// +  mais é soma
+// - menos é subtração
+// / divisão
+// % Resto (porcentagem )
+
+// ########################################
+// Operadores Lógicos
+// && e
+// || ou
+// ! negação
+
+// ########################################
+// Operadores Relacionais
+// > maior
+// >= maior ou igual
+// < menor
+// <= menor ou igual
+
+// #######################################
+// ++ incremento
+// -- decremento
+
+// let vIncremento = 0;
+// vIncremento = vIncremento + 1;
+
+// console.log(vIncremento);
+
+// let v1 = 5;
+// let v2 = 3;
+// let vTrue = 0;
+
+// let resultado = v1 % v2;
+// console.log(resultado);
+
+// let usuarioNome = ""; // 0 - inativo | 1 - ativo
+
+// if (!usuarioNome) {
+//   console.log("não tem algo");
+// }
+
+// console.log("usuario status: " + usuarioNome);
+
+// let valorTotal = 0; // numero ou float
+// let valor1 = 100; // numero ou float
+// let valor2 = 50; // numero ou float
+// let valor3 = 50; // numero ou float
+// let nomeUsuario = ""; // string ou texto
+// let meuArray = []; //new Array();
+
+// meuArray = ["lelelele", "reinaldo"];
+
+// valorTotal = valor1 + valor2;
+
+// console.log(valorTotal);
+
+// console.log("nome: " + nomeUsuario);
+// console.log(meuArray);
+
+// // Estrutura condicional com if(se)
+
+// if (valor1 <= valor2) {
+//   console.log("O valor " + valor1 + " é menor que o valor " + valor2);
+// } else {
+//   console.log("O valor " + valor1 + " é igual ao valor " + valor3);
+// }
+
+// if (valor1 == 1) {
+//   console.log("O valor " + valor1 + " é menor que o valor " + valor2);
+// } else if (valor1 == 2) {
+//   console.log("O valor " + valor1 + " é igual ao valor " + valor3);
+// } else if (valor1 == valor3) {
+//   console.log("O valor " + valor1 + " é igual ao valor " + valor3);
+// } else {
+//   console.log("Nenhuma condição foi atendida");
+// }
+
+// estrutura condicional com switch
+// switch (valor1) {
+//   case 15:
+//     console.log("O valor é 10");
+//     break;
+//   case 30:
+//     console.log("O valor é 30");
+//     break;
+//   case 100:
+//     console.log("O valor é 100");
+//     break;
+//   case 1000:
+//     console.log("O valor é 1000");
+//     break;
+
+//   default:
+//     console.log("Nenhum valor foi encontrado");
+//     break;
+// }
+
+// estrutura de repetição
+
+// let x = 0;
+
+// while (x < 1000) {
+//   console.log("valor de x é: " + x);
+//   x++;
+// }
+// 12345678901234567890
+//          |         |
+// Reinaldo Rodrigues
+
+// let caracter = "Reinaldo Rodrigues";
+// let arrNomes = ["Lele", "Reinaldo"];
+// console.log(arrNomes);
+// console.log(caracter.length);
+// console.log(caracter[3]);
+// for (let x = 0; x < arrNomes.length; x++) {
+//   if (arrNomes[x] == "Lele") {
+//     console.log(arrNomes[x] + " você é D+");
+//   } else {
+//     console.log(arrNomes[x] + " você é bobo");
+//   }
+//   //   console.log(arrNomes[x]);
+// }
+let txtConteudo = document.getElementById("txt");
+let btnClick = document.getElementById("btn");
+let x = 0;
+
+btnClick.addEventListener("click", () => {
+    let contarCaracter = txtConteudo.length;
+    console.log(contarCaracter);
+    //   if (contarCaracter < 3) {
+    //     console.log("O nome deve conter mais de 3 caracteres.");
+    //     return;
+    //   }
+    console.log(x + ") o texto é: " + txtConteudo.value);
+    x++;
+});

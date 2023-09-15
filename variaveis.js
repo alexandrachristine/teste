@@ -1,81 +1,117 @@
-console.log("oi");
-let total = 10;
 
-// usar console.log para mostrar na tela
+let btnClick = document.getElementById("btn");
+let txtNome = document.getElementById("name");
+let txtEndereco = document.getElementById("address");
+let txtEmail = document.getElementById("email");
+let txtMenssagem = document.getElementById("text");
+let textRetorno = document.getElementById("teste2");
+let x = 0;
+btnClick.addEventListener("click", () => {
+    textRetorno.innerHTML = "";
 
-// console.log("ddddd");
-
-// ou
-
-// let strX = "aaaa"
-
-// console.log(strX);
-
-//
-
-
-
-
-
-
-
-// crie uma variavel e atribua o seu nome
-let name = "Alexandra";
-console.log(name);
+    //Nome
+    let NomeReal = txtNome.value;
+    let countName = NomeReal.length;
+    if (NomeReal == "" || countName < 3) {
+        let msgErro =
+            '<div class="erro">Verifique o nome informado, não pode ser vazio ou conter menos que 3 caracteres.</div>';
+        textRetorno.innerHTML = msgErro;
 
 
+        console.log(NomeReal);
+        console.log("Nome inválido.");
+        return;
+    }
+    //console.log(x + ") o texto é: " + NomeReal); ou
+    console.log(`${x} O nome é: ${NomeReal}`);
+    x++;
+    //Endereço
+    let EnderecoReal = txtEndereco.value;
+
+    let countAddress = EnderecoReal.length;
+
+    if (EnderecoReal == "" || countAddress < 5) {
+
+        let msgErro =
+
+            '<div class="erro">Verifique o endereço informado, não pode ser vazio ou conter menos que 3 caratres.</div>';
 
 
 
-// crie uma variavel e atribua o nome de alguem
-let nome = "Reinaldo";
-console.log(nome);
+        textRetorno.innerHTML = msgErro;
+
+    }
 
 
 
+    console.log(EnderecoReal);
 
-// compare se a primeira variavel é igual a segunda
+    console.log(countAddress);
 
-let nota = 6;
-if (nota <= 5) {
-    console.log("reprovado");
-} else if (nota > 5 && nota < 7) {
-    console.log("recuperação");
-} else {
-    console.log("aprovado");
-}
+    if (countAddress < 3) {
 
-let valorTotal = 0; //numero ou float
-let valor = 0; //numero ou float
-let nomeUsuario = ""; //string ou texto
-let meuArray = new Array();
-meuArray = ("lelelele", "reinaldo");
+        console.log("Endereço Inválido.");
 
-valorTotal = valor1 + valor2;
+        return;
 
-console.log(valorTotal)
-console.log(valorTotal)
-console.log(valorTotal)
-console.log(valorTotal)
-console.log(valorTotal)
+    }
 
-//Operadores
-//atribuição =
-//igual== ou ===
-//desigualde !=
-//
+    //console.log(x + ") o texto é: " + EnderecoReal); ou
+    console.log(`${x} o endereço é: ${EnderecoReal}`);
 
-let v1 = 1;
-let v2 = 2;
-let vTrue = 0;
+    x++;
+    //Email
+    let EmailReal = txtEmail.value;
+    let countEmail = EmailReal.length;
+    if (EmailReal == "" || countEmail < 9) {
+        let msgErro =
+            '<div class="erro">Email inválido.</div>';
+        textRetorno.innerHTML = msgErro;
 
-if (v1 != v2) {
-    console.log("é diferente ");
-} else {
-    console.log("é igual");
+    }
+    console.log(EmailReal);
+    console.log(countEmail);
+    if (countEmail < 9) {
+        console.log("Email inválido");
+        return;
 
-}
-console.log(typeof v1);
-console.log(typeof v2);
-console.log
-console.log
+    }
+    //console.log(x + ") o texto é:" + EmailReal); ou
+    console.log(`${x} o email é: ${EmailReal}`);
+    //menssagem
+    let MenssagemReal = txtMenssagem.value;
+    let countMenssagem = MenssagemReal.length;
+    if (MenssagemReal == "" || countMenssagem < 6) {
+        let msgErro =
+            '<div class="erro"> Esse campo não pode ficar vazio.</div>';
+        textRetorno.innerHTML = msgErro;
+    }
+    console.log(MenssagemReal);
+    console.log(countMenssagem);
+    if (countMenssagem < 6) {
+        console.log("Campo vazio");
+        return;
+
+    }
+    //console.log(x + ") o texto é:" + MenssagemReal); ou
+    const formElememto = document.getElementById("form");
+
+    const formData = new FormData(formElememto);
+
+    let = urlForm = "https://atesco.com.br/lele/";
+
+    enviarForm = fetch(urlForm, {
+
+        method: "POST",
+
+        body: formData,
+
+    });
+
+
+
+    console.log(enviarForm);
+    console.log(`${x} o texto é: ${MenssagemReal}`);
+});
+
+

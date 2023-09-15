@@ -8,9 +8,9 @@ h1 {
     text-decoration: 3px rgb(255, 0, 85) overline underline;
     padding: 10px;
     color: rgb(0, 0, 0);
-    font-size: 50px;
+    font-size: 100px;
     font-family: 'DM Serif Display', serif;
-    background-color: rgb(201, 140, 183);
+
     text-align: center;
 }
 
@@ -125,4 +125,10 @@ ol {
     font-size: xx-large;
     font-family: sans-serif;
     text-decoration: underline;
+}
+
+header {
+    height: 90px;
+
+    background-color: #131212;
 }
