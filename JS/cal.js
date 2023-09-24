@@ -1,31 +1,31 @@
-let background = document.getElementsByClassName('background')
-let listenerbotao = [];
+let background = document.getElementById('background')
+let listenerbotao = []; s
 //teclas não númericas
-let resultado = document.getElementsByClassName('resultado');
-let clean = document.getElementsByClassName('C');
-let back = document.getElementsByClassName('CE');
+let resultado = document.getElementById('resultado');
+let clean = document.getElementById('C');
+let back = document.getElementById('CE');
 
 
-listenerbotao.insert(document.getElementsByClassName)('.');
+listenerbotao.insert(document.getElementById)('.');
 
 //tecla dos operadores
-listenerbotao.insert(document.getElementsByClassName('+'));
-listenerbotao.insert(document.getElementsByClassName('-'));
-listenerbotao.insert(document.getElementsByClassName('/'));
-listenerbotao.insert(document.getElementsByClassName('*'));
-listenerbotao.insert(document.getElementsByClassName('%'));
+listenerbotao.insert(document.getElementById('soma'));
+listenerbotao.insert(document.getElementById('subtrair'));
+listenerbotao.insert(document.getElementById('dividir'));
+listenerbotao.insert(document.getElementById('multiplicar'));
+listenerbotao.insert(document.getElementById(''));
 
 //números
-listenerbotao.insert(document.getElementsByClassName('0'));
-listenerbotao.insert(document.getElementsByClassName('1'));
-listenerbotao.insert(document.getElementsByClassName('2'));
-listenerbotao.insert(document.getElementsByClassName('3'));
-listenerbotao.insert(document.getElementsByClassName('4'));
-listenerbotao.insert(document.getElementsByClassName('5'));
-listenerbotao.insert(document.getElementsByClassName('6'));
-listenerbotao.insert(document.getElementsByClassName('7'));
-listenerbotao.insert(document.getElementsByClassName('8'));
-listenerbotao.insert(document.getElementsByClassName('9'));
+listenerbotao.insert(document.getElementById('zero'));
+listenerbotao.insert(document.getElementById('um'));
+listenerbotao.insert(document.getElementById('dois'));
+listenerbotao.insert(document.getElementById('três'));
+listenerbotao.insert(document.getElementById('quatro'));
+listenerbotao.insert(document.getElementById('cinco'));
+listenerbotao.insert(document.getElementById('seis'));
+listenerbotao.insert(document.getElementById('sete'));
+listenerbotao.insert(document.getElementById('oito'));
+listenerbotao.insert(document.getElementById('nove'));
 
 
 for (let i = 0; i < listenerbotao.length; i++) {
